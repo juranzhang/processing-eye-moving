@@ -1,6 +1,6 @@
 /*
   Copy and pasted from https://forum.processing.org/one/topic/ellipse-constrain-shape.html
-  This is used to show that using constrain() to draw eyes that track mouse location
+  This is used to show that using constrain() to draw eyes that track mouse location is possible.
   */
 
 float x, y;
