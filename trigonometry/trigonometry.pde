@@ -1,3 +1,9 @@
+/*
+  Juran Zhang
+  Oct 25 2016
+  Use trigonometry to draw eyes that track mouse location
+  */
+  
 int eye_dim = 100;
 int pupil_dim = 40;
 
