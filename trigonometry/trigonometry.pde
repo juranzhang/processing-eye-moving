@@ -2,6 +2,7 @@
   Juran Zhang
   Oct 25 2016
   Use trigonometry to draw eyes that track mouse location
+  This is the most preferred way. You can compare with map() and make your own choice.
   */
   
 int eye_dim = 100;
