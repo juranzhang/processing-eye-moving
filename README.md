@@ -1,4 +1,4 @@
-# processing-practice
+# Processing practice: draw eyes that track mouse location
 The folder is to show different methods to draw eyes that track mouse location.
 The trigonometry approach is the most preferred one, but you can definitely go ahead and use map(). If you use map(), it is important to adjust the parameters to suit your design.
 
