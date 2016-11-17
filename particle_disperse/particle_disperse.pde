@@ -1,5 +1,5 @@
 int x = 0;
-int number_particles = 100;
+int number_particles = 500;
 Particle[] particles;
 void setup() {
   size(400,400);
@@ -15,7 +15,6 @@ void setup() {
 void draw() {
   background(0);
   for (Particle p : particles) {
-    p.check();
     p.update();
     p.show();
   }
@@ -31,18 +30,26 @@ class Particle {
   }
   
   void update(){
-    posX = posX+cos(ang);
-    posY = posY+sin(ang);
-  }
-  
-  void check(){
-    if(dist(posX,posY,mouseX,mouseY) <=20){
-      posX = mouseX - 20;
-      posY = mouseY - 20;
-      ang = ang-PI/100;
+    if(dist(posX,posY,mouseX,mouseY) <=50){
+      ang = atan((mouseY-posY)/(mouseX-posX));
+      if(mouseX<posX){
+        posX = posX+5*cos(ang);
+      }
+      else{
+        posX = posX-5*cos(ang);
+      }
+      
+      if(mouseY<=posY){
+        posY = posY+5*sin(ang);
+      }
+      else{
+        posY = posY-5*sin(ang);
+      }
     }
     else{
-      ang = ang+PI/100;
+      posX = posX+0.5*cos(ang);
+      posY = posY+0.5*sin(ang);
+      ang = ang+random(PI/200)-PI/100;
     }
   }
   
