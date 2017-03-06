@@ -12,3 +12,7 @@ The least wanted approach is constrain(). You can't simply constrain mouseX and 
 ###fortune_frame:
 
 A practice code to show basic usage of class, array and mousePressed().
+
+###Object_star:
+
+A demo that uses object to generate arrays of randomly generated stars. 
